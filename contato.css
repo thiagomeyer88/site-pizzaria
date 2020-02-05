@@ -1,0 +1,43 @@
+div.contato{
+    background: #faf1e4;
+    margin: 50px auto;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid #b92312;
+    padding:0 20px;
+}
+
+div.contato h1{
+    color: #b92312;
+    text-align: center;
+    padding: 20px 0 10px;
+    text-transform: uppercase; 
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: 1px solid #b92312;
+    margin-bottom: 20px;
+}
+
+textarea{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: 1px solid #b92312;
+    margin-bottom: 20px;
+}
+
+input.botaoEnviar{
+    display: block;
+    margin: 0 auto 20px;
+    color: #b92312
+}
+
+input.botaoEnviar:hover{
+    cursor:pointer;
+    background-color: #b92312;
+    color: #faf1e4;
+}

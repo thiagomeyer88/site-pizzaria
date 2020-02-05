@@ -1,0 +1,46 @@
+.cardapio{
+    background:#faf1e4;;
+    margin: 50px auto 0;
+    width: 600px;
+    border-radius: 5px;
+    border: 1px solid #b92312;
+}
+
+.cardapio-categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.cardapio-categorias a{
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.cardapio-categorias a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+div.itens{
+    padding: 15px;
+    
+}
+
+.pizzas{
+    color: #b92312;
+}
+
+.massas{
+    color: #1223b9;
+}
+
+.sobremesas{
+    color: #5db912;
+}
+
+.bebidas{
+    color: #b96b12; 
+}

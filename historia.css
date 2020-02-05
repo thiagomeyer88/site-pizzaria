@@ -1,0 +1,25 @@
+div.historia{
+    background: #faf1e4;
+    margin: 50px auto;
+    width: 600px;
+    border-radius: 5px;
+    border: 1px solid #b92312;
+    padding:0 20px;
+}
+
+div.historia h1{
+    color: #b92312;
+    text-align: center;
+    padding: 20px 0 10px;
+    text-transform: uppercase; 
+}
+
+div.historia p{
+    color: #b92312;
+    text-align: justify;
+    text-indent: 3%;
+}
+
+footer{
+    bottom: -97%;
+}
