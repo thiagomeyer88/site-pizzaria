@@ -64,16 +64,19 @@ function mostrarItens(categ,cor,botao){
     for(let i in itens){
         if(itens[i].categoria === categ){
             let ponto = '. '
-            let pontos = ''
-            if(itens[i].nome.length > 20){
-                pontos = ponto.repeat(43 - itens[i].nome.length);
+            let pontos = ' '
+            if(screen.width > 600){     
+                if(itens[i].nome.length > 20){
+                    pontos = ponto.repeat(43 - itens[i].nome.length);
+                }
+                else if(itens[i].nome.length < 10){
+                    pontos = ponto.repeat(47 - itens[i].nome.length);
+                }
+                else{
+                    pontos = ponto.repeat(45 - itens[i].nome.length);
+                }
             }
-            else if(itens[i].nome.length < 10){
-                pontos = ponto.repeat(47 - itens[i].nome.length);
-            }
-            else{
-                pontos = ponto.repeat(45 - itens[i].nome.length);
-            }
+            
             let novoProduto = document.createElement('p');
             novoProduto.innerHTML = `${itens[i].nome}${pontos}${itens[i].preco}`;
             novoProduto.style.color = cor;

@@ -1,7 +1,7 @@
 div.historia{
     background: #faf1e4;
     margin: 50px auto;
-    width: 600px;
+    max-width: 600px;
     border-radius: 5px;
     border: 1px solid #b92312;
     padding:0 20px;
@@ -22,4 +22,10 @@ div.historia p{
 
 footer{
     bottom: -97%;
+}
+
+@media(max-width:560px){
+    div.historia img{
+        width: 320px;
+    }
 }

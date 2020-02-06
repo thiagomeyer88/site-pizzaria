@@ -28,7 +28,7 @@ header{
     padding-top: 5px;
 }
 
-.menu-cabecalho a{
+.menu-cabecalho a,.menu-cabecalho span{
     text-decoration: none;
     text-transform: uppercase;
     color:#fac375;
@@ -37,15 +37,43 @@ header{
     margin-left: 20px;
 }
 
+.menu-cabecalho span.iconeMenu{
+    display:none;
+}
+
 .menu-cabecalho a:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 
+.menuMobile{
+    display:none;
+    position: absolute;
+    top: 0;
+    background-color: #b92312;
+    width: 100%;
+}
+
+.menuMobile a{
+    padding: 5px 10px;
+    display:block;
+    border-bottom: 1px solid #fac375;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fac375;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.menuMobile a:hover{
+    background-color: #fac375;
+    color: #b92312;
+}
+
 div.promocao{
         background: #faf1e4;
         margin: 50px auto 0;
-        width: 400px;
+        max-width: 400px;
         border-radius: 5px;
         border: 1px solid #b92312;
         padding:10px 5px;
@@ -66,8 +94,7 @@ div.promocao p span{
 }
 
 footer{
-    position: absolute;
-    bottom: 0%;
+    margin-top: 365px;
     width: 100%;
     background-color: #b92312;
     display:flex;
@@ -76,4 +103,15 @@ footer{
     justify-content: space-between;
     color:#fac375;
     padding: 10px 20px;
+}
+
+@media(max-width: 600px){
+    .menu-cabecalho a,.menu-cabecalho span{
+        display: none;
+    }
+    .menu-cabecalho span.iconeMenu{
+        display:inline;
+        margin-right: 50px;
+        cursor: pointer;
+    }
 }
