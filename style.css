@@ -114,4 +114,7 @@ footer{
         margin-right: 50px;
         cursor: pointer;
     }
+    div.promocao p span{
+    font-size: 1.2em;
+    }
 }

@@ -14,12 +14,15 @@ div.contato h1{
     text-transform: uppercase; 
 }
 
-input{
+.inputTexto{
+    display: block;
+    width: 300px;
     padding: 5px;
     border-radius: 5px;
     font-size: 1.2em;
     border: 1px solid #b92312;
     margin-bottom: 20px;
+    margin-left: 30px;
 }
 
 textarea{
@@ -28,11 +31,18 @@ textarea{
     font-size: 1.2em;
     border: 1px solid #b92312;
     margin-bottom: 20px;
+    margin-left: 30px;
+    width: 300px;
 }
 
 input.botaoEnviar{
     display: block;
     margin: 0 auto 20px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: 1px solid #b92312;
+    margin-bottom: 20px;
     color: #b92312
 }
 
@@ -40,4 +50,13 @@ input.botaoEnviar:hover{
     cursor:pointer;
     background-color: #b92312;
     color: #faf1e4;
+}
+
+@media(max-width: 600px){
+    .inputTexto{
+        margin-left: 0;
+    }
+    textarea{
+        margin-left: 0;
+    }
 }
